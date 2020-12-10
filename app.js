@@ -7,6 +7,11 @@ const handleHome = (req,res) =>{
     res.send('hello world');
 }
 
+const handleBetween = (req,res,next) => {
+    console.log('Im between');
+    next();
+}
+
 const handleProfile = (req,res) =>{
     res.send('profile page');
 }
@@ -16,6 +21,10 @@ const handleListening = () =>{
 }
 
 //route
+// app.get('/', handleBetween, handleHome);
+
+app.use(handleBetween);
+
 app.get('/', handleHome);
 app.get('/profile', handleProfile);
 
