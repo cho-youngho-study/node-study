@@ -10,6 +10,7 @@ import videoRouter from "./routers/videosRouter";
 
 const app = express();
 
+app.set('view engine', 'pug');
 //route
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
