@@ -1,21 +1,21 @@
 export const home = (req,res) =>{
-    res.render('home');
+    res.render('home',{pageTitle: 'home'});
 }
 export const search = (req,res) =>{
-    res.render('search');
+    res.render('search',{pageTitle: 'search'});
 }
 export const videos = (req,res) =>{
-    res.render('videos');
+    res.render('videos',{pageTitle: 'videos'});
 }
 export const upload = (req,res) =>{
-    res.render('upload');
+    res.render('upload',{pageTitle: 'upload'});
 }
 export const videosDetail = (req,res) =>{
-    res.render('videosDetail');
+    res.render('videosDetail',{pageTitle: 'videosDetail'});
 }
 export const editVideo = (req,res) =>{
-    res.render('editVideo');
+    res.render('editVideo',{pageTitle: 'editVideo'});
 }
 export const deleteVideo = (req,res) =>{
-    res.render('deleteVideo');
+    res.render('deleteVideo',{pageTitle: 'deleteVideo'});
 }
