@@ -2,20 +2,20 @@ export const home = (req,res) =>{
     res.render('home');
 }
 export const search = (req,res) =>{
-    res.send('search');
+    res.render('search');
 }
 export const videos = (req,res) =>{
-    res.send('videos');
+    res.render('videos');
 }
 export const upload = (req,res) =>{
-    res.send('upload');
+    res.render('upload');
 }
 export const videosDetail = (req,res) =>{
-    res.send('videosDetail');
+    res.render('videosDetail');
 }
 export const editVideo = (req,res) =>{
-    res.send('editVideo');
+    res.render('editVideo');
 }
 export const deleteVideo = (req,res) =>{
-    res.send('deleteVideo');
+    res.render('deleteVideo');
 }
